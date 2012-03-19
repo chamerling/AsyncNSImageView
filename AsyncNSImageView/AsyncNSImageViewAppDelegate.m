@@ -3,7 +3,7 @@
 //  AsyncNSImageView
 //
 //  Created by Christophe Hamerling on 19/03/12.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//  Copyright 2012 christophehamerling.com. All rights reserved.
 //
 
 #import "AsyncNSImageViewAppDelegate.h"
