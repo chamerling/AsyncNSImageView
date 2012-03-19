@@ -10,12 +10,15 @@
 
 @interface AsyncNSImageViewAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
-    NSArray* photos;
+    NSMutableArray* photos;
+    int counter;
 }
 
 @property (assign) IBOutlet NSTableView *tableView;
 @property (assign) IBOutlet NSWindow *window;
 
 - (IBAction)clearCache:(id)sender;
+
+- (IBAction)addImage:(id)sender;
 
 @end

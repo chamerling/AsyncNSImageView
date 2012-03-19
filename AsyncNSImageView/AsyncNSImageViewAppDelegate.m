@@ -16,17 +16,8 @@
 @synthesize window;
 - (void)awakeFromNib {
 	[super awakeFromNib];
-	photos = [[NSArray alloc] initWithObjects:
+	photos = [[NSMutableArray alloc] initWithObjects:
               @"http://chamerling.github.com/AsyncNSImageView/test/0.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/1.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/2.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/3.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/4.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/5.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/6.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/7.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/8.jpg",
-              @"http://chamerling.github.com/AsyncNSImageView/test/9.jpg",
               nil];
 }
 
@@ -34,6 +25,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    counter = 1;
 }
 
 #pragma mark Table view methods
@@ -58,8 +50,22 @@
 
 - (IBAction)clearCache:(id)sender {
     [[EGOCache currentCache] clearCache];
+    photos = [[NSMutableArray alloc] init];
     [[self tableView] reloadData];
 }
 
+- (IBAction)addImage:(id)sender {
+    NSLog(@"Add object...");
+    
+    if (counter == 10) {
+        counter = 0;
+    }
+    
+    NSString *url = [NSString stringWithFormat:@"http://chamerling.github.com/AsyncNSImageView/test/%ld.jpg", counter++];
+    NSLog(@"url : %@", url);
+    
+    [photos insertObject:url atIndex:0];
+    [[self tableView] reloadData];
+}
 
 @end
