@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90EDB111517727E00111B2C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C90EDB101517727E00111B2C /* loading.gif */; };
+		C9CB75C515176EDD00A5A18D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CB75C415176EDD00A5A18D /* Cocoa.framework */; };
+		C9CB75CF15176EDD00A5A18D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9CB75CD15176EDD00A5A18D /* InfoPlist.strings */; };
+		C9CB75D115176EDD00A5A18D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB75D015176EDD00A5A18D /* main.m */; };
+		C9CB75D515176EDD00A5A18D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C9CB75D315176EDD00A5A18D /* Credits.rtf */; };
+		C9CB75D815176EDD00A5A18D /* AsyncNSImageViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB75D715176EDD00A5A18D /* AsyncNSImageViewAppDelegate.m */; };
+		C9CB75DB15176EDD00A5A18D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CB75D915176EDD00A5A18D /* MainMenu.xib */; };
+		C9CB75E315176F1900A5A18D /* AsyncViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB75E215176F1900A5A18D /* AsyncViewCell.m */; };
+		C9CB75EC15176F2900A5A18D /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB75E515176F2900A5A18D /* EGOImageLoader.m */; };
+		C9CB75ED15176F2900A5A18D /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB75E715176F2900A5A18D /* EGOImageLoadConnection.m */; };
+		C9CB75EE15176F2900A5A18D /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB75E915176F2900A5A18D /* EGOCache.m */; };
+		C9CB75EF15176F2900A5A18D /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB75EB15176F2900A5A18D /* EGOImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C90EDB101517727E00111B2C /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		C9CB75C015176EDD00A5A18D /* AsyncNSImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncNSImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CB75C415176EDD00A5A18D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C9CB75C715176EDD00A5A18D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9CB75C815176EDD00A5A18D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9CB75C915176EDD00A5A18D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9CB75CC15176EDD00A5A18D /* AsyncNSImageView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsyncNSImageView-Info.plist"; sourceTree = "<group>"; };
+		C9CB75CE15176EDD00A5A18D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9CB75D015176EDD00A5A18D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9CB75D215176EDD00A5A18D /* AsyncNSImageView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AsyncNSImageView-Prefix.pch"; sourceTree = "<group>"; };
+		C9CB75D415176EDD00A5A18D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C9CB75D615176EDD00A5A18D /* AsyncNSImageViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncNSImageViewAppDelegate.h; sourceTree = "<group>"; };
+		C9CB75D715176EDD00A5A18D /* AsyncNSImageViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncNSImageViewAppDelegate.m; sourceTree = "<group>"; };
+		C9CB75DA15176EDD00A5A18D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9CB75E115176F1900A5A18D /* AsyncViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncViewCell.h; sourceTree = "<group>"; };
+		C9CB75E215176F1900A5A18D /* AsyncViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncViewCell.m; sourceTree = "<group>"; };
+		C9CB75E415176F2900A5A18D /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		C9CB75E515176F2900A5A18D /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		C9CB75E615176F2900A5A18D /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		C9CB75E715176F2900A5A18D /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		C9CB75E815176F2900A5A18D /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		C9CB75E915176F2900A5A18D /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		C9CB75EA15176F2900A5A18D /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		C9CB75EB15176F2900A5A18D /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9CB75BD15176EDD00A5A18D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB75C515176EDD00A5A18D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9CB75B515176EDD00A5A18D = {
+			isa = PBXGroup;
+			children = (
+				C9CB75F015176F3300A5A18D /* Classes */,
+				C9CB75CA15176EDD00A5A18D /* Sample */,
+				C9CB75C315176EDD00A5A18D /* Frameworks */,
+				C9CB75C115176EDD00A5A18D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9CB75C115176EDD00A5A18D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB75C015176EDD00A5A18D /* AsyncNSImageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9CB75C315176EDD00A5A18D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB75C415176EDD00A5A18D /* Cocoa.framework */,
+				C9CB75C615176EDD00A5A18D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9CB75C615176EDD00A5A18D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB75C715176EDD00A5A18D /* AppKit.framework */,
+				C9CB75C815176EDD00A5A18D /* CoreData.framework */,
+				C9CB75C915176EDD00A5A18D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C9CB75CA15176EDD00A5A18D /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				C90EDB101517727E00111B2C /* loading.gif */,
+				C9CB75E115176F1900A5A18D /* AsyncViewCell.h */,
+				C9CB75E215176F1900A5A18D /* AsyncViewCell.m */,
+				C9CB75D615176EDD00A5A18D /* AsyncNSImageViewAppDelegate.h */,
+				C9CB75D715176EDD00A5A18D /* AsyncNSImageViewAppDelegate.m */,
+				C9CB75D915176EDD00A5A18D /* MainMenu.xib */,
+				C9CB75CB15176EDD00A5A18D /* Supporting Files */,
+			);
+			name = Sample;
+			path = AsyncNSImageView;
+			sourceTree = "<group>";
+		};
+		C9CB75CB15176EDD00A5A18D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB75CC15176EDD00A5A18D /* AsyncNSImageView-Info.plist */,
+				C9CB75CD15176EDD00A5A18D /* InfoPlist.strings */,
+				C9CB75D015176EDD00A5A18D /* main.m */,
+				C9CB75D215176EDD00A5A18D /* AsyncNSImageView-Prefix.pch */,
+				C9CB75D315176EDD00A5A18D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9CB75F015176F3300A5A18D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB75E415176F2900A5A18D /* EGOImageLoader.h */,
+				C9CB75E515176F2900A5A18D /* EGOImageLoader.m */,
+				C9CB75E615176F2900A5A18D /* EGOImageLoadConnection.h */,
+				C9CB75E715176F2900A5A18D /* EGOImageLoadConnection.m */,
+				C9CB75E815176F2900A5A18D /* EGOCache.h */,
+				C9CB75E915176F2900A5A18D /* EGOCache.m */,
+				C9CB75EA15176F2900A5A18D /* EGOImageView.h */,
+				C9CB75EB15176F2900A5A18D /* EGOImageView.m */,
+			);
+			name = Classes;
+			path = AsyncNSImageView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9CB75BF15176EDD00A5A18D /* AsyncNSImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CB75DE15176EDD00A5A18D /* Build configuration list for PBXNativeTarget "AsyncNSImageView" */;
+			buildPhases = (
+				C9CB75BC15176EDD00A5A18D /* Sources */,
+				C9CB75BD15176EDD00A5A18D /* Frameworks */,
+				C9CB75BE15176EDD00A5A18D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsyncNSImageView;
+			productName = AsyncNSImageView;
+			productReference = C9CB75C015176EDD00A5A18D /* AsyncNSImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9CB75B715176EDD00A5A18D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C9CB75BA15176EDD00A5A18D /* Build configuration list for PBXProject "AsyncNSImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9CB75B515176EDD00A5A18D;
+			productRefGroup = C9CB75C115176EDD00A5A18D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9CB75BF15176EDD00A5A18D /* AsyncNSImageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9CB75BE15176EDD00A5A18D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB75CF15176EDD00A5A18D /* InfoPlist.strings in Resources */,
+				C9CB75D515176EDD00A5A18D /* Credits.rtf in Resources */,
+				C9CB75DB15176EDD00A5A18D /* MainMenu.xib in Resources */,
+				C90EDB111517727E00111B2C /* loading.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9CB75BC15176EDD00A5A18D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB75D115176EDD00A5A18D /* main.m in Sources */,
+				C9CB75D815176EDD00A5A18D /* AsyncNSImageViewAppDelegate.m in Sources */,
+				C9CB75E315176F1900A5A18D /* AsyncViewCell.m in Sources */,
+				C9CB75EC15176F2900A5A18D /* EGOImageLoader.m in Sources */,
+				C9CB75ED15176F2900A5A18D /* EGOImageLoadConnection.m in Sources */,
+				C9CB75EE15176F2900A5A18D /* EGOCache.m in Sources */,
+				C9CB75EF15176F2900A5A18D /* EGOImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9CB75CD15176EDD00A5A18D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9CB75CE15176EDD00A5A18D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9CB75D315176EDD00A5A18D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9CB75D415176EDD00A5A18D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C9CB75D915176EDD00A5A18D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9CB75DA15176EDD00A5A18D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9CB75DC15176EDD00A5A18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9CB75DD15176EDD00A5A18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9CB75DF15176EDD00A5A18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AsyncNSImageView/AsyncNSImageView-Prefix.pch";
+				INFOPLIST_FILE = "AsyncNSImageView/AsyncNSImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9CB75E015176EDD00A5A18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AsyncNSImageView/AsyncNSImageView-Prefix.pch";
+				INFOPLIST_FILE = "AsyncNSImageView/AsyncNSImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9CB75BA15176EDD00A5A18D /* Build configuration list for PBXProject "AsyncNSImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CB75DC15176EDD00A5A18D /* Debug */,
+				C9CB75DD15176EDD00A5A18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9CB75DE15176EDD00A5A18D /* Build configuration list for PBXNativeTarget "AsyncNSImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CB75DF15176EDD00A5A18D /* Debug */,
+				C9CB75E015176EDD00A5A18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9CB75B715176EDD00A5A18D /* Project object */;
+}
